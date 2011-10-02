@@ -1,3 +1,10 @@
 An [occam-pi][1] compiler script for Vim.
 
+[Remember][2] to load the plugin with `:compiler occam` or add the following
+line to your `.vimrc`:
+
+    " Enable the occam-pi compiler plugin
+    autocmd Filetype occam compiler occam
+
   [1]: http://pop-users.org/wiki/occam-pi
+  [2]: http://stackoverflow.com/questions/945504/compiler-plugins-not-loaded
