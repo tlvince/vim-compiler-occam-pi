@@ -5,7 +5,7 @@
 if exists("current_compiler")
   finish
 endif
-let current_compiler = "occam"
+let current_compiler = "occam-pi"
 
 let s:cpo_save = &cpo
 set cpo-=C
