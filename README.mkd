@@ -1,0 +1,3 @@
+An [occam-pi][1] compiler script for Vim.
+
+  [1]: http://pop-users.org/wiki/occam-pi
