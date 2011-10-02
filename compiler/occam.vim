@@ -1,5 +1,5 @@
 " Vim compiler file
-" Compiler:		occam-pi     
+" Compiler:     occam-pi     
 " Maintainer:   Tom Vincent <http://tlvince.com/contact/>
 
 if exists("current_compiler")
