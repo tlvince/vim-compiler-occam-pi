@@ -10,9 +10,13 @@ let current_compiler = "occam-pi"
 let s:cpo_save = &cpo
 set cpo-=C
 
-setlocal makeprg=skroc\ --occ21-opts\ "-etc -w -y -znd -znec -udo -zncc -init -xin -mobiles -V -zep -msf -b"
+if exists(":CompilerSet") != 2          " older Vim always used :setlocal
+  command -nargs=* CompilerSet setlocal <args>
+endif
 
-setlocal errorformat=Error-occ21-%f(%l)-\ %m
+CompilerSet makeprg=kroc
+
+CompilerSet errorformat=Error-occ21-%f(%l)-\ %m
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
